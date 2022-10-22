@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+	<SmartColony_SmartSwitchToggleOn>Smart Toggle</SmartColony_SmartSwitchToggleOn>
+	<SmartColony_SmartSwitchToggleOnDescription>Ask your SmartColony Hub to toggle the switch</SmartColony_SmartSwitchToggleOnDescription>
+
+	<SmartColony_SmartDoorToggleOpen>Smart Toggle Open</SmartColony_SmartDoorToggleOpen>
+	<SmartColony_SmartDoorToggleOpenDescription>Ask your SmartColony Hub to toggle open the door</SmartColony_SmartDoorToggleOpenDescription>
+	
+	<SmartColony_SmartTurretSetForcedTarget>Smart Fire At</SmartColony_SmartTurretSetForcedTarget>
+	<SmartColony_SmartTurretSetForcedTargetDescription>Ask your SmartColony Hub to fire at a target location</SmartColony_SmartTurretSetForcedTargetDescription>
+	
+	<SmartColony_GlobalSmartHubSetting>Ask your SmartColony Hub to fire at a target location</SmartColony_GlobalSmartHubSetting>
+</LanguageData>
