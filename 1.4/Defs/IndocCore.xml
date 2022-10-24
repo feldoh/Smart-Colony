@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--============AI=======================================================================-->
+
+  <ThingDef ParentName="BuildingBase" >
+
+    <defName>AI_Core_GS</defName>
+    <label>AI Core</label>
+    <description>Core desc</description>
+    <size>(4, 4)</size>
+	<designationCategory>Misc</designationCategory>
+	
+	 <!--=============================================================================================================================-->
+	<drawGUIOverlay>true</drawGUIOverlay>
+
+     <graphicData>
+      <texPath>Things/Building/Core</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4, 4)</drawSize>
+   <!--   <shadowData>
+        <volume>(2.2, 0.4, 0.8)</volume>
+        <offset>(0, 0, 0.1)</offset>
+      </shadowData> -->
+    </graphicData> 
+	
+	 <!--=============================================================================================================================-->
+	<altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>false</destroyable>
+    <useHitPoints>true</useHitPoints>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+	 <!--=============================================================================================================================-->
+        <tickerType>Normal</tickerType>
+		<blockWind>true</blockWind>
+	    <minifiedDef>MinifiedThing</minifiedDef>
+		
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+				
+		
+	<statBases>
+	<MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+
+      <Flammability>0</Flammability>
+      <Mass>800</Mass>
+    </statBases>
+	
+	<hasInteractionCell>false</hasInteractionCell>
+    <interactionCellOffset>(0,0,-6)</interactionCellOffset>
+	
+
+	
+	
+    <building>
+	
+	  <destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+      <soundAmbient>ArchonexusCore_Ambience</soundAmbient>
+      <deconstructible>false</deconstructible> <!-- no bug -->
+      <claimable>true</claimable>
+	 </building>
+	  
+	 <costList>
+      <Steel>180</Steel>
+      <Uranium>5</Uranium>
+	  <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+	  
+	  
+
+	
+	 <!--=============================================================================================================================-->
+	
+    <comps>
+
+	
+	   <li Class="CompProperties_Glower">
+	    <overlightRadius>4</overlightRadius>
+        <glowRadius>8</glowRadius>
+        <glowColor>(3,202,252,0)</glowColor>
+      </li>
+	    
+	  
+	   <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ArchonexusCore_Ambience</soundAmbientProducingPower>
+      </li>
+	  
+      <li Class="CompProperties_Flickable" />
+
+       </comps>
+
+
+    <researchPrerequisites>
+      <!--<li>GS_Indoc</li>-->
+    </researchPrerequisites>
+	   
+	     </ThingDef>
+		 
+		 
+		 
+		 
+		 
+		 
+	
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+	
+		 
+		 
+		 
+		 
+
+</Defs>
