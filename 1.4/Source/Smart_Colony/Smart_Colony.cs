@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -18,6 +19,17 @@ namespace Smart_Colony
 
 			var harmony = new Harmony("Taggerung.rimworld.Smart_Colony.main");
 			harmony.PatchAll();
+			foreach (var td in DefDatabase<ThingDef>.AllDefsListForReading)
+			{
+				if (td.thingClass != null && (td.thingClass == typeof(Building_Turret) || td.thingClass.IsSubclassOf(typeof(Building_Turret))))
+			{
+				//Faghot
+				CompProperties cp = new CompProperties();
+				cp.compClass = typeof(SmartThings.Turrets.CompSmartTurret);
+				td.comps.Add(cp);
+
+			}
+			}
 			Settings = GetSettings<SmartColonySettings>();
 		}
 
